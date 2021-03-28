@@ -1,12 +1,11 @@
 package com.example.doggoscopes
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.DatePicker
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 /**
@@ -14,22 +13,21 @@ import androidx.navigation.fragment.findNavController
  */
 class FirstFragment : Fragment() {
 
-    override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.title_screen, container, false)
+
     }
 
     override fun getView(): View? {
         return super.getView()
     }
 
-  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.birthdayChoice).setOnClickListener {
+        view.findViewById<Button>(R.id.ariesButton).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }

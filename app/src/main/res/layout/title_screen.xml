@@ -11,37 +11,146 @@
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="@string/question"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/datePicker"
+        app:layout_constraintBottom_toTopOf="@id/table1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"
-        android:calendarViewShown="false"
-        android:headerBackground="@android:color/holo_orange_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        app:layout_constraintTop_toBottomOf="parent">
 
-    <Button
-        android:id="@+id/birthdayChoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/datePicker" />
+        <TableRow
+            android:id="@+id/row1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ariesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aries" />
+
+            <Space
+                android:layout_width="20dp"/>
+
+            <Button
+                android:id="@+id/taurusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taurus" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/geminiButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gemini" />
+            <Space
+                android:layout_width="20dp"/>
+            <Button
+                android:id="@+id/cancerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancer" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/leoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leo" />
+            <Space
+                android:layout_width="20dp"/>
+            <Button
+                android:id="@+id/virgoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/virgo" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/libraButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/libra" />
+            <Space
+                android:layout_width="10dp"/>
+            <Button
+                android:id="@+id/scorpioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorpio" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/saguittariusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sagittarius" />
+            <Space
+                android:layout_width="20dp"/>
+            <Button
+                android:id="@+id/capricornButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capricorn" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/aquariusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aquarius" />
+            <Space
+                android:layout_width="10dp"/>
+            <Button
+                android:id="@+id/piscesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pisces" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
