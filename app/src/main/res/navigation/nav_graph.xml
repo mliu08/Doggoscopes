@@ -22,6 +22,42 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/ResultPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CancerFragment"
+            app:destination="@id/CancerPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_LeoFragment"
+            app:destination="@id/LeoPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_VirgoFragment"
+            app:destination="@id/VirgoPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_LibraFragment"
+            app:destination="@id/LibraPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ScorpioFragment"
+            app:destination="@id/ScorpioPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SagittariusFragment"
+            app:destination="@id/SagittariusPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CapricornFragment"
+            app:destination="@id/CapricornPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_AquariusFragment"
+            app:destination="@id/AquariusPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_PiscesFragment"
+            app:destination="@id/PiscesPage" />
     </fragment>
 
     <fragment
@@ -57,5 +93,102 @@
             app:destination="@id/TitleScreen" />
     </fragment>
 
+    <fragment
+        android:id="@+id/CancerPage"
+        android:name="com.example.doggoscopes.CancerFragment"
+        android:label="CancerPage"
+        tools:layout="@layout/fragment_cancer">
 
+        <action
+            android:id="@+id/action_CancerFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LeoPage"
+        android:name="com.example.doggoscopes.LeoFragment"
+        android:label="LeoPage"
+        tools:layout="@layout/fragment_leo">
+
+        <action
+            android:id="@+id/action_LeoFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/VirgoPage"
+        android:name="com.example.doggoscopes.VirgoFragment"
+        android:label="VirgoPage"
+        tools:layout="@layout/fragment_virgo">
+
+        <action
+            android:id="@+id/action_VirgoFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LibraPage"
+        android:name="com.example.doggoscopes.LibraFragment"
+        android:label="LibraPage"
+        tools:layout="@layout/fragment_libra">
+
+        <action
+            android:id="@+id/action_LibraFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ScorpioPage"
+        android:name="com.example.doggoscopes.ScorpioFragment"
+        android:label="ScorpioPage"
+        tools:layout="@layout/fragment_scorpio">
+
+        <action
+            android:id="@+id/action_ScorpioFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SagittariusPage"
+        android:name="com.example.doggoscopes.SagittariusFragment"
+        android:label="SagittariusPage"
+        tools:layout="@layout/fragment_sagittarius">
+
+        <action
+            android:id="@+id/action_SagittariusFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CapricornPage"
+        android:name="com.example.doggoscopes.CapricornFragment"
+        android:label="CapricornPage"
+        tools:layout="@layout/fragment_capricorn">
+
+        <action
+            android:id="@+id/action_CapricornFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AquariusPage"
+        android:name="com.example.doggoscopes.AquariusFragment"
+        android:label="AquariusPage"
+        tools:layout="@layout/fragment_aquarius">
+
+        <action
+            android:id="@+id/action_AquariusFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PiscesPage"
+        android:name="com.example.doggoscopes.PiscesFragment"
+        android:label="PiscesPage"
+        tools:layout="@layout/fragment_pisces">
+
+        <action
+            android:id="@+id/action_PiscesFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
 </navigation>

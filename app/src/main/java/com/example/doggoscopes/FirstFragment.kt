@@ -38,5 +38,32 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.geminiButton).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_GeminiFragment)
         }
+        view.findViewById<Button>(R.id.cancerButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_CancerFragment)
+        }
+        view.findViewById<Button>(R.id.leoButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_LeoFragment)
+        }
+        view.findViewById<Button>(R.id.virgoButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_VirgoFragment)
+        }
+        view.findViewById<Button>(R.id.libraButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_LibraFragment)
+        }
+        view.findViewById<Button>(R.id.scorpioButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ScorpioFragment)
+        }
+        view.findViewById<Button>(R.id.sagittariusButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SagittariusFragment)
+        }
+        view.findViewById<Button>(R.id.capricornButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_CapricornFragment)
+        }
+        view.findViewById<Button>(R.id.aquariusButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_AquariusFragment)
+        }
+        view.findViewById<Button>(R.id.piscesButton).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_PiscesFragment)
+        }
     }
 }
