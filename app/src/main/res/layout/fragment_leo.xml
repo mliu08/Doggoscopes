@@ -20,7 +20,7 @@
         android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="350dp"
+        android:paddingBottom="300dp"
         android:text="Dogs born under the sign of Leo are used to getting what they want, which could pose challenges with Pisces. It may be time to try out compromise again. Start small with playing a rule variation of your dog's favorite game."
         android:textSize="18sp"
         android:textStyle="bold"
