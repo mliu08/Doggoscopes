@@ -8,13 +8,22 @@
     <fragment
         android:id="@+id/TitleScreen"
         android:name="com.example.doggoscopes.FirstFragment"
-        android:label="@string/title_label"
+        android:label="TitleScreen"
         tools:layout="@layout/title_screen">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_GeminiFragment"
+            app:destination="@id/GeminiPage" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_TaurusFragment"
+            app:destination="@id/TaurusPage" />
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/ResultPage" />
     </fragment>
+
     <fragment
         android:id="@+id/ResultPage"
         android:name="com.example.doggoscopes.SecondFragment"
@@ -25,4 +34,28 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/TitleScreen" />
     </fragment>
+
+    <fragment
+        android:id="@+id/TaurusPage"
+        android:name="com.example.doggoscopes.TaurusFragment"
+        android:label="TaurusPage"
+        tools:layout="@layout/fragment_taurus">
+
+        <action
+            android:id="@+id/action_TaurusFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GeminiPage"
+        android:name="com.example.doggoscopes.GeminiFragment"
+        android:label="GeminiPage"
+        tools:layout="@layout/fragment_gemini">
+
+        <action
+            android:id="@+id/action_GeminiFragment_to_FirstFragment"
+            app:destination="@id/TitleScreen" />
+    </fragment>
+
+
 </navigation>

@@ -22,4 +22,6 @@
 
     <string name="question">When was your dog born?</string>
     <string name="result_text">Zodiac</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
